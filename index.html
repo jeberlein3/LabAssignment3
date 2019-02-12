@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My Bio Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: -3px -1px 21px 11px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -3px -1px 21px 11px rgba(0, 0, 0, 0.75);
+            box-shadow: -3px -1px 21px 11px rgba(0, 0, 0, 0.75);
+        }
+
+        html,
+        body {
+            height: 100vh;
+
+        }
+
+        .logo-text {
+            display: block;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        h2 {
+            padding: 20px 0px 15px 0px;
+            color: white;
+
+        }
+
+        p {
+            margin: 10px 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            color: white;
+            padding: 2px;
+        }
+
+        .main-header,
+        .main-footer {
+            height: 75px;
+            width: 100vw;
+            background-color: #6da0f2;
+
+        }
+
+        .main-container {
+            height: 100%;
+            width: 90vw;
+            margin: 0 auto;
+            overflow: hidden;
+
+        }
+
+        .top-section {
+            width: 100%;
+            background-color: #33373f;
+            height: 210px;
+            margin: 10px 0px;
+
+        }
+
+        .top-inner-section {
+            overflow: auto;
+        }
+
+        .bottom-section {
+            background-color: #06224f;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .gallery {
+            height: 100%;
+            margin-left: 25%;
+            padding: 0px 1em;
+
+
+        }
+
+        .gallery>h2 {
+            color: white;
+        }
+
+        .gallery-pic-container {
+            list-style-type: none;
+            text-align: center;
+            overflow: auto;
+        }
+
+        .gallery-pic-container>li {
+            display: inline-block;
+            margin: 10px;
+            padding: 2px;
+        }
+
+        .gallery-pic-container>li>img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #06224f;
+            height: 100%;
+            float: left;
+
+        }
+
+        .sidebar>ul {
+            list-style-type: none;
+
+
+        }
+
+        .sidebar>ul>li>a {
+            display: block;
+            padding: 15px 20px;
+            background-color: #33373f;
+            border: 1px solid #f1f1f1;
+            color: white;
+
+        }
+
+        .pic-container {
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+
+        }
+
+        .pic-container>img {
+            object-fit: cover;
+            display: block;
+            width: 210px;
+
+
+        }
+
+        .footer-text {
+            text-align: center;
+            display: block;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <span class="logo-text">
+            John Eberlein
+        </span>
+    </header>
+    <section class="main-container">
+        <div class="top-section">
+            <div class="top-inner-section">
+                <div class="pic-container">
+
+                    <img src="img/Profile.jpg" class="bio-image" alt="my pic">
+                </div>
+
+                <div class="bio-description">
+                    <h2>My Bio Page</h2>
+                    <p>
+                        My name is John Eberlein. I currently attend Fresno State full time and study Business
+                        Administration
+                        with an option in Information Systems. This will be my last semester at Fresno State. </p>
+                    <p>
+                        Besides going to school full time, I also work full time. I am an Instructor and Department Head
+                        of
+                        Technology at a non-profit organization called UCP of Central California. I have worked
+                        there for approximately 8 years.
+                    </p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-section">
+            <aside class="sidebar">
+                <ul class="list">
+                    <li>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.com">Amazon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gamestop.com">Gamestop</a>
+                    </li>
+
+            </aside>
+            <div class="gallery">
+                <h2>Interests Gallery</h2>
+                <ul class="gallery-pic-container">
+                    <li class="gallery-item box-shadow" >
+                        <img src="img/Street_Tacos.jpg" alt="tacos">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/Telecaster.jpg" alt="guitar">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/yosemite.jpg" alt="hiking">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/galaxy_s9.jpg" alt="phone">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/ps4_controller.jfif" alt="controller">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/51JlG5V-9ZL._SL500_.jpg" alt="book">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/red-bull.jpeg" alt="energy">
+                    </li>
+                    <li class="gallery-item box-shadow">
+                        <img src="img/gaming-chair.jpg" alt="chair">
+                    </li>
+
+                </ul>
+            </div>
+
+    </section>
+    <footer class="main-footer">
+        <span class="footer-text">
+            Copyright (C) 2019. Created by John Eberlein
+        </span>
+    </footer>
+
+</body>
+
+</html>
