@@ -72,13 +72,15 @@
 
         }
 
-        .gallery {
+        .main-content {
+            padding-top: 50px;
             height: 100%;
             margin-left: 25%;
             padding: 0px 1em;
 
 
         }
+
         .sidebar {
             width: 20%;
             background-color: #06224f;
@@ -86,12 +88,13 @@
             float: left;
 
         }
+
         .right-sidebar {
             width: 10%;
             background-color: #06224f;
             height: 100%;
             float: right;
-            text-align:left;
+            text-align: left;
 
         }
 
@@ -131,39 +134,28 @@
             padding: 20px;
         }
 
-        .course-table {
-            table-layout: fixed;
-            width: 80%;
-            padding-top:10px;
+        .login-form {
+            width: 500px;
+            height: 300px;
+            margin: 80px auto;
+            background-color: #6da0f2;
+            float: justify;
+            padding-left: 50px;
+            padding-right: 50px;
+         
         }
 
-        .course-table>thead>tr>td {
-            border: 1px solid #AAA;
-            font-weight: bold;
-            font-size: 18px;
-            background-color: yellow;
+        .user-input {
+            width: 91%;
+            padding: 15px;
+            margin: 5px;
         }
 
-        .course-table>thead>tr {
-            height: 50px;
-            text-align: center;
-
-        }
-
-        .course-table>tbody>tr {
-            height: 28px;
-
-        }
-
-        .course-table>tbody>tr>td {
-            border: 1px solid blue;
-
-
-        }
-
-        td {
-            padding: 10px;
-            background-color:white;
+        .submit-button {
+            padding: 10px 25px;
+            background-color: #CCC;
+            float: right;
+            margin-top: 12px;
         }
     </style>
 </head>
@@ -195,6 +187,8 @@
             <aside class="sidebar">
                 <ul class="list">
                     <li>
+                        <a href="index.html">Home Page</a>
+                    <li>
                         <a href="https://www.facebook.com/">Facebook</a>
                     </li>
                     <li>
@@ -206,90 +200,20 @@
                     <li>
                         <a href="https://www.gamestop.com">Gamestop</a>
                     </li>
-                    <li>
-                        <a href="Login.html">Login</a>
                     </li>
 
             </aside>
             <aside class="right-sidebar">
-                <h2>Right Sidebar</h2>
-                <p> This website will display a list of the courses I am taking this semester.</p>
-               
+
+
 
             </aside>
-            <div class="gallery">
-                <table class="course-table">
-                    <thead>
-                        <tr>
-                            <td>
-                                Courses
-                            </td>
-                            <td>
-                                Section
-                            </td>
-                            <td>
-                                Instructor
-                            </td>
-                            <td>
-                                Days
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                IS183</td>
-                            <td>
-                                31969
-                            </td>
-                            <td>
-                                Lucas Phan
-                            </td>
-                            <td>
-                                T,TH
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                IS182</td>
-                            <td>
-                                32041
-                            </td>
-                            <td>
-                                James Henson
-                            </td>
-                            <td>
-                                T
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                IS140</td>
-                            <td>
-                                32132
-                            </td>
-                            <td>
-                                Marianne Mollring
-                            </td>
-                            <td>
-                                TH
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                MGT124</td>
-                            <td>
-                                32107
-                            </td>
-                            <td>
-                                Dean Davis
-                            </td>
-                            <td>
-                                T,TH
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="main-content">
+                <form class="login-form">
+                    <input placeholder="Username" type="text" name="Username" class="user-input">
+                    <input placeholder="Password" type="text" name="Password" class="user-input">
+                    <button onclick="" class="submit-button" type="submit">Login</button>
+                </form>
             </div>
 
     </section>
